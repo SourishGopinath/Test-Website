@@ -1,0 +1,98 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Students' Marks</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        }
+        .container {
+        margin-top: 50px;
+        }
+        .form-group {
+        margin-bottom: 20px;
+        }
+        label {
+        display: inline-block;
+        width: 150px;
+        text-align: left;
+        }
+        input[type="number"] {
+        width: 100px;
+        }
+        /* Remove arrows for number input */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+        /* Firefox */
+        input[type="number"] {
+        -moz-appearance: textfield;
+        }
+        input[type="submit"] {
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+        background-color: #0056b3;
+        }
+    </style>
+    </head>
+    <body>
+
+    <h1>Enter Student Marks</h1>
+    <div class="container">
+        <form id="MarksForm" method="post">
+            <div class="form-group">
+                <label for="USN">USN </label>
+                <input type="number" id="USN" name="USN" required>
+            </div>
+            <div class="form-group">
+                <label for="USN">Student Name </label>
+                <input type="number" id="USN" name="USN" required>
+            </div>
+        <div class="form-group">
+            <label for="CIE1">CIE1 (Max 50)</label>
+            <input type="number" id="CIE1" name="CIE1" max="50" value="0">
+        </div>
+        <div class="form-group">
+            <label for="CIE2">CIE2 (Max 50)</label>
+            <input type="number" id="CIE2" name="CIE2" max="50" value="0">
+        </div>
+        <div class="form-group">
+            <label for="CIE3">CIE3 (Max 50)</label>
+            <input type="number" id="CIE3" name="CIE3" max="50" value="0">
+        </div>
+        <div class="form-group">
+            <label for="Quiz1">Quiz1 (Max 10)</label>
+            <input type="number" id="Quiz1" name="Quiz1" max="10" value="0">
+        </div>
+        <div class="form-group">
+            <label for="Quiz2">Quiz2 (Max 10)</label>
+            <input type="number" id="Quiz2" name="Quiz2" max="10" value="0">
+        </div>
+        <div class="form-group">
+            <label for="Quiz3">Quiz3 (Max 10)</label>
+            <input type="number" id="Quiz3" name="Quiz3" max="10" value="0">
+        </div>
+        <div class="form-group">
+            <label for="EL">EL (Max 40)</label>
+            <input type="number" id="EL" name="EL" max="40" value="0">
+        </div>
+        <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script src="submit_marks.js"></script>
+    </body>
+    </html>

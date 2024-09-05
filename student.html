@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .options {
+      margin-top: 50px;
+    }
+    .option-button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+    .option-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome, Student!</h1>
+  <p>Please choose an action:</p>
+  <div class="options">
+    <button data-href="/student_marks" class="option-button">Check Marks</button>
+    <button data-href="/student_enter_marks" class="option-button">Enter Marks</button>
+  </div>
+
+</body>
+</html>
